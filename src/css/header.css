@@ -94,3 +94,20 @@ footer {
 .nav-menu {
   width: 100%;
 }
+
+/* footer */
+
+footer {
+  height: 100px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.contact img {
+  height: 50px;
+  width: auto;
+}

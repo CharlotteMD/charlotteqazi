@@ -23,6 +23,7 @@ h4,
 a {
   font-family: "Raleway", sans-serif;
   color: var(--raspberry);
+  line-height: 1.5em;
 }
 
 a {
@@ -42,10 +43,19 @@ p {
 
 .content {
   min-height: calc(100vh - 70px);
+  padding-bottom: 15px;
 }
 
-footer {
-  height: 50px;
+.pageTitle {
+  text-align: center;
+  font-weight: bold;
+  margin: 15px auto;
+  text-decoration: underline;
+}
+
+.sideNote {
+  font-size: 12px;
+  color: var(--grey);
 }
 
 /* tablet */

@@ -1,0 +1,51 @@
+.careerJourney li {
+  margin: 10px auto;
+}
+
+.careerJourney h3,
+.careerJourney h4 {
+  text-align: center;
+}
+
+.careerJourney h4 {
+  color: var(--grey);
+}
+
+.emoji {
+  font-size: 50px;
+  line-height: 1.5em;
+}
+
+.careerJourney ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.careerJourney li {
+  max-width: 90%;
+  list-style: none;
+  border: solid var(--raspberry) 2px;
+  padding: 10px;
+}
+
+.careerJourney li .sideNote a {
+  text-align: center;
+}
+
+.careerJourney li p span {
+  font-weight: bold;
+}
+
+/* tablet */
+@media (min-width: 450px) {
+  .careerJourney li {
+    max-width: 45%;
+  }
+}
+
+/* desktop */
+@media (min-width: 1000px) {
+  .careerJourney li {
+    max-width: 30%;
+  }
+}

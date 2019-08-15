@@ -25,13 +25,8 @@ function Header() {
           </a>
         </li>
         <li>
-          <a href="/intro" alt="intro">
-            Intro
-          </a>
-        </li>
-        <li>
-          <a href="/about" alt="about">
-            About
+          <a href="/career" alt="career">
+            Career
           </a>
         </li>
       </ul>
