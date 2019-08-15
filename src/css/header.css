@@ -5,6 +5,7 @@ footer {
   background-color: magenta;
 }
 
+/* burger nav animation */
 .burger-nav {
   width: 60px;
   height: 45px;
@@ -71,4 +72,12 @@ footer {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.isopen {
+  display: block;
 }

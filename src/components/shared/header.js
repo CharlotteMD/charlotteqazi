@@ -3,8 +3,10 @@ import "../../css/header.css";
 
 function Header() {
   function handleBurger() {
-    const nav = document.querySelector(".burger-nav");
-    nav.classList.toggle("isopen");
+    const burgernav = document.querySelector(".burger-nav");
+    const navmenu = document.querySelector(".nav-menu");
+    burgernav.classList.toggle("isopen");
+    navmenu.classList.toggle("isopen");
   }
 
   return (
