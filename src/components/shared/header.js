@@ -12,6 +12,12 @@ function Header() {
   return (
     <header className="navbar">
       <h1>Charlotte</h1>
+      <button className="burger-nav" id="burger" onClick={handleBurger}>
+        <span />
+        <span />
+        <span />
+      </button>
+
       <ul className="nav-menu">
         <li>
           <a href="/" alt="intro">
@@ -29,11 +35,6 @@ function Header() {
           </a>
         </li>
       </ul>
-      <button className="burger-nav" id="burger" onClick={handleBurger}>
-        <span />
-        <span />
-        <span />
-      </button>
     </header>
   );
 }
