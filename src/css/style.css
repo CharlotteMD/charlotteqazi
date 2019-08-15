@@ -1,3 +1,12 @@
 html {
   --max-site-width: 350px;
 }
+
+.content {
+  background-color: yellow;
+  min-height: calc(100vh - 70px);
+}
+
+footer {
+  height: 50px;
+}
