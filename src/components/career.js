@@ -18,7 +18,7 @@ function Career() {
       date: "July - September 2014",
       info: "http://www.rivieraevents.com",
       skills:
-        "working within a multi-disciplinary team, experience working in Asia Pacific (China, Hong Kong, Singapore), creative thinking"
+        "working within a multi-disciplinary team, experience working in Asia Pacific (China, Hong Kong, Singapore), creative thinking, business development"
     },
     {
       emoji: "📞",
@@ -34,7 +34,7 @@ function Career() {
       date: "June 2016 - November 2017",
       info: "https://thestudentlawyer.com/",
       skills:
-        "management, digital marketing(SEO, social media, e-marketing), initiative, creative problem-solving, strategy"
+        "management, digital marketing (SEO, social media, e-marketing, marketing analytics), creative problem-solving, strategy"
     },
     {
       emoji: "👩🏻‍💻",
@@ -50,7 +50,7 @@ function Career() {
       date: "June 2018 - present",
       info: "https://bcgdv.com/",
       skills:
-        "in addition to technical skills, agile working, daily standups, teamwork, networking"
+        "in addition to technical skills, working in a multi-disciplinary team, working to tight deadlines, experience working in the Middle East"
     }
   ];
 

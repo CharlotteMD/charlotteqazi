@@ -4,6 +4,13 @@ footer {
 }
 
 /* burger nav animation */
+
+.navbar button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 .burger-nav {
   width: 30px;
   height: 20px;
