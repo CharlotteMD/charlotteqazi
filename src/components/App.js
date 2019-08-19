@@ -5,6 +5,7 @@ import Footer from "./shared/footer.js";
 import Intro from "./intro";
 import Career from "./career";
 import Projects from "./projects";
+import Interests from "./interests";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "../css/style.css";
@@ -15,9 +16,9 @@ function App() {
       <Header />
       <div className="content">
         <Router>
-          <Route path="/intro" component={Intro} />
           <Route path="/career" component={Career} />
           <Route path="/projects" component={Projects} />
+          <Route path="/interests" component={Interests} />
           <Route exact path="/" component={Intro} />
         </Router>
       </div>

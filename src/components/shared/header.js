@@ -25,13 +25,18 @@ function Header() {
 
       <ul className="nav-menu">
         <li>
-          <a href="/career" alt="career">
+          <a href="/career" alt="Career">
             Career
           </a>
         </li>
         <li>
-          <a href="/projects" alt="project">
+          <a href="/projects" alt="Project">
             Projects
+          </a>
+        </li>
+        <li>
+          <a href="/interests" alt="Interests">
+            Interests
           </a>
         </li>
       </ul>
