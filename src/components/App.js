@@ -4,6 +4,7 @@ import Header from "./shared/header.js";
 import Footer from "./shared/footer.js";
 import Intro from "./intro";
 import Career from "./career";
+import Projects from "./projects";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "../css/style.css";
@@ -16,6 +17,7 @@ function App() {
         <Router>
           <Route path="/intro" component={Intro} />
           <Route path="/career" component={Career} />
+          <Route path="/projects" component={Projects} />
           <Route exact path="/" component={Intro} />
         </Router>
       </div>

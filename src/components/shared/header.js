@@ -29,6 +29,11 @@ function Header() {
             Career
           </a>
         </li>
+        <li>
+          <a href="/projects" alt="project">
+            Projects
+          </a>
+        </li>
       </ul>
     </header>
   );
