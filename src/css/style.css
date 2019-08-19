@@ -1,3 +1,7 @@
+@import url("intro.css");
+@import url("career.css");
+@import url("header.css");
+
 html {
   --max-mobile-width: 450px;
   --max-tablet-width: 950px;
@@ -26,14 +30,38 @@ a {
   line-height: 1.5em;
 }
 
+h3,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  color: var(--grey);
+}
+
+.emoji {
+  font-size: 50px;
+  line-height: 1.5em;
+  margin: 10px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
 }
 
+a:hover {
+  color: var(--raspberry);
+  font-weight: bold;
+}
+
 p {
   font-family: "Playfair Display", serif;
+}
+
+li {
+  list-style: none;
 }
 
 .App {

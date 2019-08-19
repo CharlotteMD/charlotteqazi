@@ -55,7 +55,7 @@ function Career() {
   ];
 
   const Experience = ({ item }) => (
-    <li>
+    <li className="blockItem">
       <h3>
         <span className="emoji" role="img">
           {item.emoji}
@@ -63,6 +63,10 @@ function Career() {
       </h3>
       <h3>{item.role}</h3>
       <h4>{item.date}</h4>
+      <p>
+        <span>Key skills: </span>
+        {item.skills}
+      </p>
       {item.info && (
         <a
           href={item.info}
@@ -73,10 +77,6 @@ function Career() {
           Click for more information
         </a>
       )}
-      <p>
-        <span>Key skills: </span>
-        {item.skills}
-      </p>
     </li>
   );
 
@@ -84,7 +84,7 @@ function Career() {
     <div className="Career">
       <h2 className="pageTitle">Career</h2>
       <div className="careerJourney">
-        <ul>
+        <ul className="blockContainer">
           {items.map(item => (
             <Experience item={item} />
           ))}

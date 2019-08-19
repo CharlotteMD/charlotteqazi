@@ -1,0 +1,15 @@
+.videoBlock {
+  height: 200px;
+  width: 200px;
+  background: dodgerblue;
+}
+
+.intro .blockItem h3 {
+  margin-bottom: auto;
+}
+
+.intro p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
