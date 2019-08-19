@@ -146,20 +146,22 @@ function Career() {
     <div className="Career">
       <h2 className="pageTitle">My Career To Date</h2>
       <div className="careerJourney">
-        <div className="blockItem">
-          <h3>Technical Skills</h3>
-
-          {skills.map(skills => (
-            <TechSkills info={skills.info} devicon={skills.devicon} />
-          ))}
+        <div className="techSkills">
+          <h3 className="subtitle">Technical Skills</h3>
+          <div className="blockContainer">
+            {skills.map(skills => (
+              <TechSkills info={skills.info} devicon={skills.devicon} />
+            ))}
+          </div>
         </div>
 
+        <h3 className="subtitle">Experience</h3>
         <ul className="blockContainer">
           {roles.map(roles => (
             <Experience role={roles} />
           ))}
         </ul>
-        <h2 className="pageTitle">Other Projects</h2>
+        <h3 className="subtitle">Other Projects</h3>
         <ul className="blockContainer">
           {projects.map(projects => (
             <MyProjects project={projects} />

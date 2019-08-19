@@ -72,7 +72,6 @@ const Passion = ({ item }) => (
 function Intro() {
   return (
     <div className="intro">
-      <h2 className="pageTitle">Charlotte Davies - Software Engineer</h2>
       <div className="videoBlock" />
       <div className="blockContainer">
         {items.map(item => (

@@ -28,6 +28,7 @@
   height: 200px;
   width: 200px;
   background: dodgerblue;
+  margin: 10px auto;
 }
 
 .intro .blockItem h3 {
@@ -41,9 +42,33 @@
 }
 
 /* career page */
+.techSkills .blockContainer {
+  background-color: var(--raspberry);
+}
 
-.careerJourney p {
-  margin-top: auto;
+.techSkills .blockItem {
+  border: solid 2px var(--candy);
+}
+
+.techSkills .blockItem:last-child {
+  width: 100%;
+}
+
+.skillsInfo {
+  margin-bottom: auto;
+}
+
+.devicons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 5px;
+}
+
+.devicons i {
+  font-size: 70px;
+  color: var(--white);
+  margin: 5px;
 }
 
 /* tablet */

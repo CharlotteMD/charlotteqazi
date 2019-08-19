@@ -29,10 +29,6 @@ a {
   line-height: 1.5em;
 }
 
-h3 {
-  margin-bottom: 10px;
-}
-
 h3,
 h4 {
   text-align: center;
@@ -82,6 +78,10 @@ li {
   font-weight: bold;
   margin: 15px auto;
   text-decoration: underline;
+}
+
+.subtitle {
+  margin: 10px auto;
 }
 
 .sideNote {

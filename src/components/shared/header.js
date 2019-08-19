@@ -11,7 +11,12 @@ function Header() {
 
   return (
     <header className="navbar">
-      <h1>Charlotte</h1>
+      <div className="navTitle">
+        <a href="/" alt="Charlotte Davies - Software Engineer">
+          <h1>Charlotte Davies</h1>
+          <h2>Software Engineer</h2>
+        </a>
+      </div>
       <button className="burger-nav" id="burger" onClick={handleBurger}>
         <span />
         <span />
@@ -19,11 +24,6 @@ function Header() {
       </button>
 
       <ul className="nav-menu">
-        <li>
-          <a href="/" alt="intro">
-            Home
-          </a>
-        </li>
         <li>
           <a href="/career" alt="career">
             Career

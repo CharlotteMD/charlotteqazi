@@ -38,16 +38,14 @@ export const MyProjects = ({ project }) => (
 );
 
 export const TechSkills = ({ info, devicon }) => (
-  <div className="miniBlock">
-    <p>{info}</p>
-    <div className="techBlock">
-      <ul>
-        <li>
-          {devicon.map(devicon => (
-            <i class={devicon} />
-          ))}
-        </li>
-      </ul>
-    </div>
+  <div className="blockItem">
+    <p className="skillsInfo">{info}</p>
+    <ul>
+      <li className="devicons">
+        {devicon.map(devicon => (
+          <i class={devicon} />
+        ))}
+      </li>
+    </ul>
   </div>
 );
