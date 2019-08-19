@@ -14,16 +14,36 @@
   justify-content: center;
 }
 
+.blockItem p span {
+  font-weight: bold;
+}
+
 .blockItem .sideNote a {
   text-align: center;
 }
 
-.careerJourney p {
-  margin-top: auto;
+/* intro page */
+
+.videoBlock {
+  height: 200px;
+  width: 200px;
+  background: dodgerblue;
 }
 
-.blockItem p span {
-  font-weight: bold;
+.intro .blockItem h3 {
+  margin-bottom: auto;
+}
+
+.intro p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* career page */
+
+.careerJourney p {
+  margin-top: auto;
 }
 
 /* tablet */

@@ -1,7 +1,6 @@
 import React from "react";
 
 import "../css/style.css";
-import "../css/career.css";
 
 function Career() {
   const items = [
