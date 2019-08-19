@@ -36,3 +36,18 @@ export const MyProjects = ({ project }) => (
     <p>{project.info}</p>
   </li>
 );
+
+export const TechSkills = ({ info, devicon }) => (
+  <div className="miniBlock">
+    <p>{info}</p>
+    <div className="techBlock">
+      <ul>
+        <li>
+          {devicon.map(devicon => (
+            <i class={devicon} />
+          ))}
+        </li>
+      </ul>
+    </div>
+  </div>
+);
