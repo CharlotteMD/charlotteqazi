@@ -8,10 +8,11 @@ const items = [
     emoji1: "🛠",
     one:
       "I can build almost anything I can imagine - I love experimenting with all sorts: Alexa Skills Development in Node.js, Three.js, games written in vanilla JS",
-    emoji2: "🖲",
-    two: "Click here to see some of my recent projects",
-    emoji3: "",
-    three: ""
+    emoji2: "✨",
+    two:
+      "You can make a static site sparkle! I love being able to wow users with JavaScript animations and features!",
+    emoji3: "🖲",
+    three: "Click here to see some of my recent projects"
   },
   {
     love: "Things I love about coding",

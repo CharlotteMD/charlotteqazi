@@ -1,30 +1,26 @@
 import React from "react";
 
+import { Experience, MyProjects } from "./shared/blocks.js";
+
 import "../css/style.css";
 
 function Career() {
-  const items = [
+  const roles = [
     {
-      emoji: "👩🏻‍🎓",
-      role:
-        "First class degree in Classics from Royal Holloway, University of London",
-      date: "July 2014",
-      skills: "problem-solving, logic, communication, time-management"
-    },
-    {
-      emoji: "🌇",
-      role: "Internship in Event Management, Shanghai, China",
-      date: "July - September 2014",
-      info: "http://www.rivieraevents.com",
+      emoji: "🏙",
+      role: "Software Engineer building startups at BCG Digital Ventures",
+      date: "June 2018 - present",
+      info: "https://bcgdv.com/",
       skills:
-        "working within a multi-disciplinary team, experience working in Asia Pacific (China, Hong Kong, Singapore), creative thinking, business development"
+        "in addition to technical skills, working in a multi-disciplinary team, working to tight deadlines, experience working in the Middle East"
     },
     {
-      emoji: "📞",
-      role: "Worked in hospitality recruitment for Madison Mayfair, London",
-      date: "December 2014 - June 2016",
-      info: "https://madisonmayfair.com/",
-      skills: "project-management, sales, negotiation, networking"
+      emoji: "👩🏻‍💻",
+      role: "Studied Web Development at General Assembly",
+      date: "November 2017 - April 2018",
+      info: "https://generalassemb.ly/",
+      skills:
+        "in addition to technical skills, agile working, daily standups, teamwork, networking"
     },
     {
       emoji: "👩🏻‍⚖️",
@@ -36,56 +32,60 @@ function Career() {
         "management, digital marketing (SEO, social media, e-marketing, marketing analytics), creative problem-solving, strategy"
     },
     {
-      emoji: "👩🏻‍💻",
-      role: "Studied Web Development at General Assembly",
-      date: "November 2017 - April 2018",
-      info: "https://generalassemb.ly/",
-      skills:
-        "in addition to technical skills, agile working, daily standups, teamwork, networking"
+      emoji: "📞",
+      role: "Worked in hospitality recruitment for Madison Mayfair, London",
+      date: "December 2014 - June 2016",
+      info: "https://madisonmayfair.com/",
+      skills: "project-management, sales, negotiation, networking"
     },
     {
-      emoji: "🏙",
-      role: "Software Engineer building startups at BCG Digital Ventures",
-      date: "June 2018 - present",
-      info: "https://bcgdv.com/",
+      emoji: "🌇",
+      role: "Internship in Event Management, Shanghai, China",
+      date: "July - September 2014",
+      info: "http://www.rivieraevents.com",
       skills:
-        "in addition to technical skills, working in a multi-disciplinary team, working to tight deadlines, experience working in the Middle East"
+        "working within a multi-disciplinary team, experience working in Asia Pacific (China, Hong Kong, Singapore), creative thinking, business development"
+    },
+    {
+      emoji: "👩🏻‍🎓",
+      role:
+        "First class degree in Classics from Royal Holloway, University of London",
+      date: "July 2014",
+      skills: "problem-solving, logic, communication, time-management"
     }
   ];
 
-  const Experience = ({ item }) => (
-    <li className="blockItem">
-      <h3>
-        <span className="emoji" role="img">
-          {item.emoji}
-        </span>
-      </h3>
-      <h3>{item.role}</h3>
-      <h4>{item.date}</h4>
-      <p>
-        <span>Key skills: </span>
-        {item.skills}
-      </p>
-      {item.info && (
-        <a
-          href={item.info}
-          alt="more information"
-          target="_blank"
-          className="sideNote"
-        >
-          Click for more information
-        </a>
-      )}
-    </li>
-  );
+  const projects = [
+    {
+      title: "Code First Girls",
+      image: "",
+      link: "https://github.com/CharlotteMD/wdi-first-project",
+      info:
+        "Whodunit remains one of my proudest project to date! I built it after just 2 weeks of learning JavaScript at General Assembly. I was so proud by how much I could achieve having learnt only a small amount of code."
+    },
+    {
+      title: "Blogging",
+      image: "",
+      link: "https://github.com/CharlotteMD/",
+      info:
+        "I have learnt so much in the past year. For reference, here is my code from 2018."
+    }
+  ];
 
   return (
     <div className="Career">
-      <h2 className="pageTitle">Career</h2>
+      <h2 className="pageTitle">My Career To Date</h2>
       <div className="careerJourney">
+        <div className="blockItem">Technical Skills</div>
         <ul className="blockContainer">
-          {items.map(item => (
-            <Experience item={item} />
+          {roles.map(roles => (
+            <Experience role={roles} />
+          ))}
+        </ul>
+        <h2 className="pageTitle">Other Projects</h2>
+        <ul className="blockContainer">
+          {projects.map(projects => (
+            <MyProjects project={projects} />
           ))}
         </ul>
       </div>
