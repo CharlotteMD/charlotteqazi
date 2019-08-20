@@ -8,6 +8,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  font-family: var(--raleway);
 }
 
 .navTitle {
@@ -27,15 +28,15 @@ footer {
   color: var(--white);
 }
 
+.navTitle h1 {
+  border-bottom: solid 1px var(--white);
+}
+
 .navTitle h1:hover,
 .navTitle h1:active,
 .navTitle h2:hover,
 .navTitle h2:active {
   color: var(--raspberry);
-}
-
-.navTitle h1 {
-  border-bottom: solid 1px var(--white);
 }
 
 /* burger nav animation */
@@ -124,19 +125,27 @@ footer {
   background-color: var(--raspberry);
 }
 
+.nav-menu.isopen {
+  display: block;
+}
+
 .nav-menu li {
   padding: 5px 10px;
   margin: 10px;
   border: dotted 5px var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-menu li a {
+  color: var(--white);
 }
 
 .nav-menu li a:hover,
 .nav-menu li a:active {
-  color: var(--candy);
-}
-
-.nav-menu.isopen {
-  display: block;
+  color: var(--grey);
 }
 
 @media (min-width: 500px) {
@@ -152,14 +161,21 @@ footer {
     background-color: transparent;
   }
 
+  .nav-menu li {
+    width: 25%;
+  }
+
+  .nav-menu li a {
+    color: var(--raspberry);
+  }
+
   .nav-menu li a:hover,
   .nav-menu li a:active {
-    color: var(--raspberry);
+    color: var(--white);
   }
 
   .burger-nav {
     display: none;
-    margin-right: 10px;
   }
 }
 

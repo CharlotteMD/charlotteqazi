@@ -2,36 +2,51 @@ import React from "react";
 
 import { MyProjects } from "./shared/blocks.js";
 
+import whodunit from "../images/whodunit.png";
+import guestbook from "../images/guestbook.png";
+import getaroom from "../images/getaroom.png";
+import appres from "../images/appres.png";
+import alexa from "../images/alexa.png";
+import portfolio from "../images/portfolio.jpg";
+
 import "../css/style.css";
 
 function Projects() {
   const projects = [
     {
       title: "Whodunit",
-      image: "",
-      link: "https://github.com/CharlotteMD/wdi-first-project",
-      info:
-        "Whodunit remains one of my proudest project to date! I built it after just 2 weeks of learning JavaScript at General Assembly. I was so proud by how much I could achieve having learnt only a small amount of code."
+      image: { whodunit },
+      link: "https://github.com/CharlotteMD/wdi-first-project"
+    },
+    {
+      title: "Guestbook",
+      image: { guestbook },
+      link: "https://github.com/CharlotteMD/wdi-second-project"
+    },
+    {
+      title: "Apprés",
+      image: { appres },
+      link: "https://github.com/CharlotteMD/wdi-group-project"
+    },
+    {
+      title: "Get A Room",
+      image: { getaroom },
+      link: "https://github.com/CharlotteMD/wdi-fourth-project"
     },
     {
       title: "Alexa Skills",
-      image: "",
-      link: "https://github.com/CharlotteMD/",
-      info:
-        "I love building voice assistants. In doing so, I have improved my knowledge of Node.js, learnt how to write Lambda functions, and practised testing my code."
+      image: { alexa },
+      link: "https://github.com/CharlotteMD/"
     },
     {
       title: "Three.js",
       image: "",
-      link: "https://github.com/CharlotteMD/",
-      info: ""
+      link: "https://github.com/CharlotteMD/"
     },
     {
       title: "My original professional portfolio",
-      image: "",
-      link: "https://github.com/CharlotteMD/",
-      info:
-        "I have learnt so much in the past year. For reference, here is my code from 2018."
+      image: { portfolio },
+      link: "https://github.com/CharlotteMD/"
     }
   ];
 
@@ -43,7 +58,18 @@ function Projects() {
           <MyProjects project={projects} />
         ))}
       </ul>
-      <p>For my professional projects, please get in touch.</p>
+      <p>
+        Please feel free to browse{" "}
+        <a href="https://github.com/CharlotteMD/" alt="GitHub">
+          my GitHub.
+        </a>
+      </p>
+      <p>
+        For examples of professional projects, please{" "}
+        <a href="mailto:charlottemarydavies@gmail.com" alt="GitHub">
+          get in touch.
+        </a>
+      </p>
     </div>
   );
 }

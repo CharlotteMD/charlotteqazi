@@ -8,12 +8,7 @@ export const Experience = ({ role }) => (
       </span>
     </h3>
     {role.info && (
-      <a
-        href={role.info}
-        alt="more information"
-        target="_blank"
-        className="sideNote"
-      >
+      <a href={role.info} alt="more information" target="_blank">
         <h3>{role.role}</h3>
       </a>
     )}
@@ -26,13 +21,21 @@ export const Experience = ({ role }) => (
   </li>
 );
 
-export const MyProjects = ({ project }) => (
+export const OtherRoles = ({ project }) => (
   <li className="blockItem">
     <img src={project.image} alt={project.title} />
     <a href={project.link} alt={project.title}>
       <h3>{project.title}</h3>
     </a>
     <p>{project.info}</p>
+  </li>
+);
+
+export const MyProjects = ({ project }) => (
+  <li className="blockItem">
+    <a href={project.link} alt={project.title}>
+      <img src={project.image} alt={project.title} />
+    </a>
   </li>
 );
 
@@ -62,4 +65,10 @@ export const NavMenu = ({ item }) => (
       {item.title}
     </a>
   </li>
+);
+
+export const FooterLinks = ({ item }) => (
+  <a href={item.link} target="_blank" alt={item.title}>
+    <img src={item.image} alt={item.title} />
+  </a>
 );

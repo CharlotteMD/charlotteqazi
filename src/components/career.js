@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Experience, MyProjects } from "./shared/blocks.js";
+import { Experience, OtherRoles } from "./shared/blocks.js";
 
 import cfg from "../images/cfg.jpg";
 import medium from "../images/medium.png";
@@ -88,7 +88,7 @@ function Career() {
         <h3 className="subtitle">Other Projects</h3>
         <ul className="blockContainer">
           {projects.map(projects => (
-            <MyProjects project={projects} />
+            <OtherRoles project={projects} />
           ))}
         </ul>
       </div>

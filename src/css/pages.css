@@ -5,7 +5,7 @@
 
 .blockItem {
   margin: 10px auto;
-  max-width: 90%;
+  width: 90%;
   list-style: none;
   border: solid var(--raspberry) 2px;
   padding: 10px;
@@ -23,10 +23,6 @@
   color: var(--grey);
 }
 
-.blockItem .sideNote a {
-  text-align: center;
-}
-
 /* intro page */
 
 .intro .blockItem h3 {
@@ -42,27 +38,22 @@
 
 /* cv page */
 
-.careerJourney .sideNote h3 {
-  color: var(--raspberry);
-  font-size: 18px;
-}
-
-.careerJourney .sideNote h3:hover {
-  color: var(--grey);
-}
-
 /* skills page */
 .techSkills .blockContainer {
   background-color: var(--raspberry);
+  justify-content: center;
+  padding: 5px 0;
+  color: var(--white);
 }
 
 .techSkills .blockItem {
   border: solid 2px var(--candy);
+  margin: 5px;
 }
 
-.techSkills .blockItem:first-child,
-.techSkills .blockItem:last-child {
-  width: 100%;
+.techSkills p {
+  font-family: var(--raleway);
+  text-align: justify;
 }
 
 .skillsInfo {
@@ -93,5 +84,9 @@
 @media (min-width: 1000px) {
   .blockItem {
     width: 30%;
+  }
+
+  .techSkills .blockItem {
+    width: 45%;
   }
 }
