@@ -29,9 +29,8 @@ export const Experience = ({ role }) => (
 export const MyProjects = ({ project }) => (
   <li className="blockItem">
     <img src={project.image} alt={project.title} />
-    <h3>{project.title}</h3>
-    <a href={project.link} alt={project.title} className="sideNote">
-      See project
+    <a href={project.link} alt={project.title}>
+      <h3>{project.title}</h3>
     </a>
     <p>{project.info}</p>
   </li>

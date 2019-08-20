@@ -2,6 +2,9 @@ import React from "react";
 
 import { Experience, MyProjects } from "./shared/blocks.js";
 
+import cfg from "../images/cfg.jpg";
+import medium from "../images/medium.png";
+
 import "../css/style.css";
 
 function Career() {
@@ -29,7 +32,7 @@ function Career() {
       date: "June 2016 - November 2017",
       info: "https://thestudentlawyer.com/",
       skills:
-        "management, digital marketing (SEO, social media, e-marketing, marketing analytics), creative problem-solving, strategy"
+        "strategy, pitching, management, client relationship management, digital marketing (SEO, social media, e-marketing, marketing analytics), creative problem-solving"
     },
     {
       emoji: "📞",
@@ -44,7 +47,7 @@ function Career() {
       date: "July - September 2014",
       info: "http://www.rivieraevents.com",
       skills:
-        "working within a multi-disciplinary team, experience working in Asia Pacific (China, Hong Kong, Singapore), creative thinking, business development"
+        "working within a multi-disciplinary team, experience working in Asia Pacific, creative thinking, business development"
     },
     {
       emoji: "👩🏻‍🎓",
@@ -57,17 +60,18 @@ function Career() {
 
   const projects = [
     {
-      title: "Code First Girls",
-      image: "",
-      link: "https://github.com/CharlotteMD/wdi-first-project",
+      title: "Code First: Girls",
+      image: { cfg },
+      link: "https://www.codefirstgirls.org.uk/",
       info:
-        "Redressing diversity within tech is extremely important to me. It just makes business sense for engineering teams to be able to empathise with their users as closely as possible. I am proud to have set up DV London's Code First Girls course. Code First Girls is a non-profit that matches women with no previous coding experience with corporate partners whose staff teach them a 8 week coding course. I absolutely love watching the girls learn and improve in confidence and they are an honour to teach."
+        "Redressing diversity within tech is extremely important to me. It just makes business sense for engineering teams to be able to empathise with their users as closely as possible. I am proud to have set up DV London's Code First: Girls course. Code First: Girls is a non-profit that matches women with no previous coding experience with corporate partners whose staff teach them a 8 week coding course. I absolutely love watching the girls learn and improve in confidence and they are an honour to teach."
     },
     {
       title: "Blogging",
-      image: "",
-      link: "https://github.com/CharlotteMD/",
-      info: ""
+      image: { medium },
+      link: "https://medium.com/@charlotte.davies",
+      info:
+        "When I first graduated General Assembly, many people asked me questions about changing my career. I wrote down those answers in my first post, which lead to more questions and more blogs."
     }
   ];
 

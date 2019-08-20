@@ -1,5 +1,9 @@
 import React from "react";
 
+import Message from "./message.js";
+
+// import charlotte from "../images/charlotte.png";
+
 import "../css/style.css";
 
 const items = [
@@ -34,6 +38,18 @@ const items = [
     emoji3: "🙏🏻",
     three:
       "Working with smart and ambitious people - being inspired, learning from them"
+  },
+  {
+    love: "Other things I love",
+    emoji1: "🧵",
+    one:
+      "Making things - currently I'm dress making but I have also been known to knit, scrapbook and occasionally bake",
+    emoji2: "💅🏻",
+    two:
+      "Painting nails - this is how I relax. I love giving my friends manicures too and given the time I'd love to become a qualified nail technician",
+    emoji3: "📚",
+    three:
+      "Reading, well listening! I listen to audiobooks on my commute and whenever else I have time to myself. My favourites are biographies and thrillers."
   }
 ];
 
@@ -72,13 +88,12 @@ const Passion = ({ item }) => (
 function Intro() {
   return (
     <div className="intro">
-      <div className="videoBlock" />
+      {/* <Message /> */}
       <div className="blockContainer">
         {items.map(item => (
           <Passion item={item} />
         ))}
       </div>
-      <p>Click here to learn more about me.</p>
     </div>
   );
 }
