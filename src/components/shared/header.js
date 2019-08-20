@@ -1,7 +1,16 @@
 import React from "react";
+
+import { NavMenu } from "./blocks.js";
 import "../../css/header.css";
 
 function Header() {
+  const items = [
+    { title: "My Career To Date", link: "/career" },
+    { title: "Tech Skills", link: "/skills" },
+    { title: "Projects", link: "/projects" },
+    { title: "About Me", link: "/" }
+  ];
+
   function handleBurger() {
     const burgernav = document.querySelector(".burger-nav");
     const navmenu = document.querySelector(".nav-menu");
@@ -24,26 +33,9 @@ function Header() {
       </button>
 
       <ul className="nav-menu">
-        <li>
-          <a href="/career" alt="Career">
-            Career
-          </a>
-        </li>
-        <li>
-          <a href="/skills" alt="Skills">
-            Tech Skills
-          </a>
-        </li>
-        <li>
-          <a href="/projects" alt="Project">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="/interests" alt="Interests">
-            Interests
-          </a>
-        </li>
+        {items.map(items => (
+          <NavMenu item={items} />
+        ))}
       </ul>
     </header>
   );

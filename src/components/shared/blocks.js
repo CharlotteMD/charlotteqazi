@@ -49,3 +49,11 @@ export const TechSkills = ({ info, devicon }) => (
     </ul>
   </div>
 );
+
+export const NavMenu = ({ item }) => (
+  <li>
+    <a href={item.link} alt={item.title}>
+      {item.title}
+    </a>
+  </li>
+);

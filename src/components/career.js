@@ -61,14 +61,13 @@ function Career() {
       image: "",
       link: "https://github.com/CharlotteMD/wdi-first-project",
       info:
-        "Whodunit remains one of my proudest project to date! I built it after just 2 weeks of learning JavaScript at General Assembly. I was so proud by how much I could achieve having learnt only a small amount of code."
+        "Redressing diversity within tech is extremely important to me. It just makes business sense for engineering teams to be able to empathise with their users as closely as possible. I am proud to have set up DV London's Code First Girls course. Code First Girls is a non-profit that matches women with no previous coding experience with corporate partners whose staff teach them a 8 week coding course. I absolutely love watching the girls learn and improve in confidence and they are an honour to teach."
     },
     {
       title: "Blogging",
       image: "",
       link: "https://github.com/CharlotteMD/",
-      info:
-        "I have learnt so much in the past year. For reference, here is my code from 2018."
+      info: ""
     }
   ];
 
