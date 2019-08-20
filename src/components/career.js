@@ -64,7 +64,7 @@ function Career() {
       image: { cfg },
       link: "https://www.codefirstgirls.org.uk/",
       info:
-        "Redressing diversity within tech is extremely important to me. It just makes business sense for engineering teams to be able to empathise with their users as closely as possible. I am proud to have set up DV London's Code First: Girls course. Code First: Girls is a non-profit that matches women with no previous coding experience with corporate partners whose staff teach them a 8 week coding course. I absolutely love watching the girls learn and improve in confidence and they are an honour to teach."
+        "I am proud to run DV London's Code First: Girls programme. Code First: Girls is a non-profit that matches women with no previous coding experience with corporate partners whose staff teach them a 8 week coding course. I absolutely love watching the girls learn and get excited about tech."
     },
     {
       title: "Blogging",

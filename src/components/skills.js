@@ -11,37 +11,12 @@ function Skills() {
       devicon: ["devicon-react-original-wordmark"]
     },
     {
-      info: "At work, sometimes we also use Typescript, PhotoShop and Webpack.",
-      devicon: [
-        "devicon-typescript-plain",
-        "devicon-photoshop-line",
-        "devicon-webpack-plain-wordmark"
-      ]
-    },
-    {
       info:
-        "To stay organised, we use Trello, Confluence, Slack, GitHub and GitLab.",
-      devicon: [
-        "devicon-trello-plain-wordmark",
-        "devicon-confluence-plain-wordmark",
-        "devicon-slack-plain-wordmark",
-        "devicon-github-plain-wordmark",
-        "devicon-gitlab-plain-wordmark"
-      ]
-    },
-    {
-      info:
-        "For simpler projects, I like to use simple JavaScript and some fancy CSS.",
+        "For simpler projects, I like to use simple JavaScript and some fancy CSS. I tend to host my work in Google firebase, in a simple S3 Bucket in AWS or Heroku.",
       devicon: [
         "devicon-html5-plain-wordmark",
         "devicon-javascript-plain",
-        "devicon-css3-plain-wordmark"
-      ]
-    },
-    {
-      info:
-        "I tend to host my work in Google firebase, in a simple S3 Bucket in AWS or Heroku.",
-      devicon: [
+        "devicon-css3-plain-wordmark",
         "devicon-amazonwebservices-plain-wordmark",
         "devicon-google-plain-wordmark",
         "devicon-heroku-original-wordmark"
@@ -49,7 +24,7 @@ function Skills() {
     },
     {
       info:
-        "Recently I have been building Alexa skills, using Node.js, the Alexa Skills Kit and Lambda Functions.",
+        "I love learning how to build a variety of tech. Recently I have been building Alexa skills, using Node.js, the Alexa Skills Kit and Lambda Functions. It's also been great to be able to play around with Three.js and Unity.",
       devicon: [
         "devicon-nodejs-plain-wordmark",
         "devicon-amazonwebservices-plain-wordmark"
@@ -76,10 +51,9 @@ function Skills() {
   ];
   return (
     <div className="skills">
-      <h1>Technical Skills</h1>
       <div className="careerJourney">
         <div className="techSkills">
-          <h3 className="subtitle">Technical Skills</h3>
+          <h2 className="pageTitle">Technical Skills</h2>
           <div className="blockContainer">
             {skills.map(skills => (
               <TechSkills info={skills.info} devicon={skills.devicon} />

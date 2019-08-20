@@ -7,12 +7,6 @@ export const Experience = ({ role }) => (
         {role.emoji}
       </span>
     </h3>
-    <h3>{role.role}</h3>
-    <h4>{role.date}</h4>
-    <p>
-      <span>Key skills: </span>
-      {role.skills}
-    </p>
     {role.info && (
       <a
         href={role.info}
@@ -20,9 +14,15 @@ export const Experience = ({ role }) => (
         target="_blank"
         className="sideNote"
       >
-        Click for more information
+        <h3>{role.role}</h3>
       </a>
     )}
+    {!role.info && <h3>{role.role}</h3>}
+    <h4>{role.date}</h4>
+    <p>
+      <span>Key skills: </span>
+      {role.skills}
+    </p>
   </li>
 );
 
