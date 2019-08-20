@@ -6,6 +6,7 @@ import Intro from "./intro";
 import Career from "./career";
 import Projects from "./projects";
 import Interests from "./interests";
+import Skills from "./skills";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "../css/style.css";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/career" component={Career} />
           <Route path="/projects" component={Projects} />
           <Route path="/interests" component={Interests} />
+          <Route path="/skills" component={Skills} />
           <Route exact path="/" component={Intro} />
         </Router>
       </div>

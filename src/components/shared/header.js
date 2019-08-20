@@ -30,6 +30,11 @@ function Header() {
           </a>
         </li>
         <li>
+          <a href="/skills" alt="Skills">
+            Tech Skills
+          </a>
+        </li>
+        <li>
           <a href="/projects" alt="Project">
             Projects
           </a>
