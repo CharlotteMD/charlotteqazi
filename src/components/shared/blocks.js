@@ -36,7 +36,7 @@ export const MyProjects = ({ project }) => (
   </li>
 );
 
-export const TechSkills = ({ info, devicon }) => (
+export const TechSkills = ({ info, devicon, image }) => (
   <div className="blockItem">
     <p className="skillsInfo">{info}</p>
     <ul>
@@ -45,6 +45,13 @@ export const TechSkills = ({ info, devicon }) => (
           <i class={devicon} />
         ))}
       </li>
+      {image && (
+        <li>
+          {image.map(image => (
+            <img src={image.src} alt={image.title} />
+          ))}
+        </li>
+      )}
     </ul>
   </div>
 );

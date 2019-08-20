@@ -2,6 +2,10 @@ import React from "react";
 
 import { TechSkills } from "./shared/blocks.js";
 
+import alexa from "../images/alexa.png";
+import unity from "../images/alexa.png";
+import three from "../images/alexa.png";
+
 import "../css/style.css";
 
 function Skills() {
@@ -28,6 +32,20 @@ function Skills() {
       devicon: [
         "devicon-nodejs-plain-wordmark",
         "devicon-amazonwebservices-plain-wordmark"
+      ],
+      image: [
+        {
+          src: { alexa },
+          title: "Alexa"
+        },
+        {
+          src: { unity },
+          title: "Unity"
+        },
+        {
+          src: { three },
+          title: "Three.js"
+        }
       ]
     },
     {
@@ -56,7 +74,11 @@ function Skills() {
           <h2 className="pageTitle">Technical Skills</h2>
           <div className="blockContainer">
             {skills.map(skills => (
-              <TechSkills info={skills.info} devicon={skills.devicon} />
+              <TechSkills
+                info={skills.info}
+                devicon={skills.devicon}
+                image={skills.image}
+              />
             ))}
           </div>
         </div>
