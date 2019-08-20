@@ -18,6 +18,11 @@
   font-weight: bold;
 }
 
+.blockItem a h3:hover,
+.blockItem a h3:active {
+  color: var(--grey);
+}
+
 .blockItem .sideNote a {
   text-align: center;
 }
@@ -25,13 +30,14 @@
 /* intro page */
 
 .intro .blockItem h3 {
-  margin-bottom: auto;
+  margin: 10px 0 auto;
 }
 
 .intro p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin: 10px 0;
 }
 
 /* cv page */
@@ -72,7 +78,7 @@
 
 .devicons i {
   font-size: 70px;
-  color: var(--white);
+  color: white;
   margin: 5px;
 }
 

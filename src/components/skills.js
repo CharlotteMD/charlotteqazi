@@ -16,7 +16,7 @@ function Skills() {
     },
     {
       info:
-        "For simpler projects, I like to use simple JavaScript and some fancy CSS. I tend to host my work in Google firebase, in a simple S3 Bucket in AWS or Heroku.",
+        "For simpler projects, I like to use JavaScript and CSS. I tend to host my work in Google Firebase, AWS or Heroku.",
       devicon: [
         "devicon-html5-plain-wordmark",
         "devicon-javascript-plain",
