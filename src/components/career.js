@@ -2,7 +2,7 @@ import React from "react";
 
 import { Experience, OtherRoles } from "./shared/blocks.js";
 
-import cfg from "../images/cfg.jpg";
+import cfg from "../images/cfg.png";
 import medium from "../images/medium.png";
 
 import "../css/style.css";
@@ -61,14 +61,16 @@ function Career() {
   const projects = [
     {
       title: "Code First: Girls",
-      image: { cfg },
+      image: cfg,
+      class: "cfg",
       link: "https://www.codefirstgirls.org.uk/",
       info:
         "I am proud to run DV London's Code First: Girls programme. Code First: Girls is a non-profit that matches women with no previous coding experience with corporate partners whose staff teach them a 8 week coding course. I absolutely love watching the girls learn and get excited about tech."
     },
     {
       title: "Blogging",
-      image: { medium },
+      image: medium,
+      class: "blogging",
       link: "https://medium.com/@charlotte.davies",
       info:
         "When I first graduated General Assembly, many people asked me questions about changing my career. I wrote down those answers in my first post, which lead to more questions and more blogs."
