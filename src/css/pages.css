@@ -53,10 +53,10 @@
 
 /* skills page */
 .techSkills .blockContainer {
-  background-color: var(--raspberry);
+  /* background-color: var(--raspberry); */
   justify-content: center;
   padding: 5px 0;
-  color: var(--white);
+  color: var(--grey);
 }
 
 .techSkills .blockItem {
@@ -73,17 +73,53 @@
   margin-bottom: auto;
 }
 
-.devicons {
+.devicons,
+.deviconImages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.devicons {
   margin: 10px 5px;
 }
 
+.devicons i,
+.techSkills img {
+  margin: 10px;
+  transition-timing-function: ease-in-out;
+}
+
 .devicons i {
-  font-size: 70px;
+  font-size: 65px;
   color: white;
-  margin: 5px;
+}
+
+.devicons i:hover {
+  transform: scale(1.5);
+}
+
+.techSkills img {
+  height: 45px;
+  width: 65px;
+}
+
+.techSkills img:hover {
+  transform: scale(1.5);
+}
+
+.techSkills .alexa,
+.techSkills .unity {
+  height: 40px;
+}
+
+.techSkills .google {
+  height: 50px;
+}
+
+.techSkills .threejs {
+  background-color: var(--grey);
+  /* margin: 10px auto; */
 }
 
 /* projects */

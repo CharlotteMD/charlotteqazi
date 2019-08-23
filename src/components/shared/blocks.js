@@ -47,14 +47,14 @@ export const TechSkills = ({ info, devicon, image }) => (
         {devicon.map(devicon => (
           <i class={devicon} />
         ))}
+        {image && (
+          <div className="devicons">
+            {image.map(image => (
+              <img src={image.src} alt={image.title} className={image.class} />
+            ))}
+          </div>
+        )}
       </li>
-      {image && (
-        <li>
-          {image.map(image => (
-            <img src={image.src} alt={image.title} />
-          ))}
-        </li>
-      )}
     </ul>
   </div>
 );
