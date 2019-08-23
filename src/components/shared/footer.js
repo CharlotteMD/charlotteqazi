@@ -13,27 +13,27 @@ function Footer() {
     {
       title: "Email",
       link: "mailto:charlottemarydavies@gmail.com",
-      image: { email }
+      image: email
     },
     {
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/charlottemdavies/",
-      image: { linkedin }
+      image: linkedin
     },
     {
       title: "GitHub",
       link: "https://github.com/CharlotteMD",
-      image: { github }
+      image: github
     },
     {
       title: "Medium",
       link: "https://medium.com/@charlotte.davies",
-      image: { medium }
+      image: medium
     }
   ];
   return (
     <footer>
-      <div class="contact">
+      <div className="contact">
         {items.map(items => (
           <FooterLinks item={items} />
         ))}
