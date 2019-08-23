@@ -33,7 +33,7 @@ export const OtherRoles = ({ project }) => (
 
 export const MyProjects = ({ project }) => (
   <li className="blockItem">
-    <a href={project.link} alt={project.title}>
+    <a href={project.link} alt={project.title} target="_blank">
       <img src={project.image} alt={project.title} />
     </a>
   </li>

@@ -8,6 +8,8 @@ import getaroom from "../images/getaroom.png";
 import appres from "../images/appres.png";
 import alexa from "../images/alexa.png";
 import portfolio from "../images/portfolio.jpg";
+import threejs from "../images/threejs.png";
+import advent from "../images/advent.png";
 
 import "../css/style.css";
 
@@ -15,37 +17,42 @@ function Projects() {
   const projects = [
     {
       title: "Whodunit",
-      image: { whodunit },
+      image: whodunit,
       link: "https://github.com/CharlotteMD/wdi-first-project"
     },
     {
       title: "Guestbook",
-      image: { guestbook },
+      image: guestbook,
       link: "https://github.com/CharlotteMD/wdi-second-project"
     },
     {
       title: "Apprés",
-      image: { appres },
+      image: appres,
       link: "https://github.com/CharlotteMD/wdi-group-project"
     },
     {
       title: "Get A Room",
-      image: { getaroom },
+      image: getaroom,
       link: "https://github.com/CharlotteMD/wdi-fourth-project"
     },
     {
       title: "Alexa Skills",
-      image: { alexa },
+      image: alexa,
       link: "https://github.com/CharlotteMD/"
     },
     {
       title: "Three.js",
-      image: "",
+      image: threejs,
       link: "https://github.com/CharlotteMD/"
     },
     {
+      title: "Advent Calendar",
+      image: advent,
+      link: "https://github.com/CharlotteMD/advent-calendar"
+    },
+    {
       title: "My original professional portfolio",
-      image: { portfolio },
+      image: portfolio,
       link: "https://github.com/CharlotteMD/"
     }
   ];
