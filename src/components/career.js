@@ -4,6 +4,7 @@ import { Experience, OtherRoles } from "./shared/blocks.js";
 
 import cfg from "../images/cfg.png";
 import medium from "../images/medium.png";
+import diversity from "../images/diversity.png";
 
 import "../css/style.css";
 
@@ -74,6 +75,13 @@ function Career() {
       link: "https://medium.com/@charlotte.davies",
       info:
         "When I first graduated General Assembly, many people asked me questions about changing my career. I wrote down those answers in my first post, which lead to more questions and more blogs."
+    },
+    {
+      title: "Diversity in Tech",
+      image: diversity,
+      class: "blogging",
+      info:
+        "I am passionate about ensuring tech is a diverse and inclusive industry, not just in what we build but also in how we as techmakers feel. I am a founder member of both DV London Women and DV Culture Club which aims to celebrates people from all cultural backgrounds and champions openness at DV."
     }
   ];
 
