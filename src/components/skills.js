@@ -6,18 +6,20 @@ import alexa from "../images/alexa.png";
 import unity from "../images/unity.png";
 import three from "../images/three.png";
 import google from "../images/google.png";
+import graphql from "../images/graph-ql.png";
+import styled from "../images/styled-components.png";
 
 import "../css/style.css";
 
 function Skills() {
   const skills = [
     {
-      info: "Most often I build my projects in React.",
-      devicon: ["devicon-react-original-wordmark colored"]
+      info: "Most often I build my projects in React (sometimes with Typescript too).",
+      devicon: ["devicon-react-original-wordmark colored", "devicon-typescript-plain colored"]
     },
     {
       info:
-        "For simpler projects, I like to use JavaScript and CSS. I tend to host my work in Google Firebase, AWS or Heroku.",
+        "For simpler projects, I like to use JavaScript and CSS (sometimes with Styled Components). I tend to host my work in Google Firebase, AWS or Heroku. In my free time, I'm experimenting with Graph QL.",
       devicon: [
         "devicon-html5-plain-wordmark colored",
         "devicon-javascript-plain colored",
@@ -25,6 +27,18 @@ function Skills() {
         "devicon-amazonwebservices-plain-wordmark colored",
         "devicon-google-plain-wordmark colored",
         "devicon-heroku-original-wordmark colored"
+      ],
+      image: [
+        {
+          src: graphql,
+          title: "Graph QL",
+          class: "graphQl"
+        },
+        {
+          src: styled,
+          title: "Styled Components",
+          class: "styledComponents"
+        }
       ]
     },
     {
