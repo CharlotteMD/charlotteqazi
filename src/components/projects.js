@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { MyProjects } from "./shared/blocks.js";
 
@@ -20,6 +20,38 @@ import beema from "../images/beema.png";
 import "../css/style.css";
 
 function Projects() {
+
+  const [techTags, setTechTags] = useState('all');
+
+  function filterAll() {
+    setTechTags('all');
+  }
+
+  function filterJS() {
+    setTechTags('JavaScript');
+  }
+
+  function filterReact() {
+    setTechTags('React');
+  }
+
+  function filterHTML() {
+    setTechTags('HTML');
+  }
+
+  function filterCSS() {
+    setTechTags('CSS');
+  }
+
+  function filterExpress() {
+    setTechTags('Express');
+  }
+
+  function filterMongoDB() {
+    setTechTags('MongoDB');
+  }
+
+
   const projects = [
     {
       title: "Whodunit",
@@ -121,11 +153,72 @@ function Projects() {
         ))}
       </ul>
       <h3 className="subtitle">Side Projects</h3>
-      <ul className="blockContainer">
-        {projects.map(projects => (
-          <MyProjects project={projects} />
-        ))}
-      </ul>
+
+
+      <button onClick={filterAll}>All</button>
+      <button onClick={filterJS}>JavaScript</button>
+      <button onClick={filterReact}>React</button>
+      <button onClick={filterHTML}>HTML</button>
+      <button onClick={filterCSS}>CSS</button>
+      <button onClick={filterExpress}>Express</button>
+      <button onClick={filterMongoDB}>MongoDB</button>
+
+      { techTags === 'all' && (
+        <ul className="blockContainer">
+          {projects.map(projects => (
+            <MyProjects project={projects} />
+          ))}
+        </ul>
+      )}
+
+      { techTags === 'JavaScript' && (
+        <ul className="blockContainer">
+          {projects.filter(projects => projects.tech.includes('JavaScript')).map(filteredTech => (
+              <MyProjects project={filteredTech} />
+            ))}
+        </ul>
+      )}
+
+      { techTags === 'React' && (
+        <ul className="blockContainer">
+          {projects.filter(projects => projects.tech.includes('React')).map(filteredTech => (
+              <MyProjects project={filteredTech} />
+            ))}
+        </ul>
+      )}
+
+      { techTags === 'HTML' && (
+        <ul className="blockContainer">
+          {projects.filter(projects => projects.tech.includes('HTML')).map(filteredTech => (
+              <MyProjects project={filteredTech} />
+            ))}
+        </ul>
+      )}
+
+      { techTags === 'CSS' && (
+        <ul className="blockContainer">
+          {projects.filter(projects => projects.tech.includes('CSS')).map(filteredTech => (
+              <MyProjects project={filteredTech} />
+            ))}
+        </ul>
+      )}
+
+      { techTags === 'Express' && (
+        <ul className="blockContainer">
+          {projects.filter(projects => projects.tech.includes('Express')).map(filteredTech => (
+              <MyProjects project={filteredTech} />
+            ))}
+        </ul>
+      )}
+
+      { techTags === 'MongoDB' && (
+        <ul className="blockContainer">
+          {projects.filter(projects => projects.tech.includes('MongoDB')).map(filteredTech => (
+              <MyProjects project={filteredTech} />
+            ))}
+        </ul>
+      )}
+
     </div>
   );
 }
