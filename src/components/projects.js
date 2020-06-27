@@ -8,6 +8,7 @@ import getaroom from "../images/getaroom.png";
 import appres from "../images/appres.png";
 import alexa from "../images/alexa.png";
 import sun from "../images/sun.png";
+import beach from "../images/beach.png";
 import amplify from "../images/amplify.png";
 import portfolio from "../images/portfolio.jpg";
 import threejs from "../images/threejs.png";
@@ -23,52 +24,69 @@ function Projects() {
     {
       title: "Whodunit",
       image: whodunit,
-      link: "https://github.com/CharlotteMD/wdi-first-project"
+      link: "https://github.com/CharlotteMD/wdi-first-project",
+      tech: ['HTML', 'CSS', 'JavaScript']
     },
     {
       title: "Guestbook",
       image: guestbook,
-      link: "https://github.com/CharlotteMD/wdi-second-project"
+      link: "https://github.com/CharlotteMD/wdi-second-project",
+      tech: ['HTML', 'CSS', 'JavaScript', 'Express', 'MongoDB']
     },
     {
       title: "Apprés",
       image: appres,
-      link: "https://github.com/CharlotteMD/wdi-group-project"
+      link: "https://github.com/CharlotteMD/wdi-group-project",
+      tech: ['HTML', 'CSS', 'JavaScript', 'Express', 'TDD', 'Angular', 'MongoDB', 'Mocha', 'jsonWebToken']
+      
     },
     {
       title: "Get A Room",
       image: getaroom,
-      link: "https://github.com/CharlotteMD/wdi-fourth-project"
+      link: "https://github.com/CharlotteMD/wdi-fourth-project",
+      tech: ['HTML', 'CSS', 'JavaScript', 'Express', 'React', 'Axios', 'jsonWebToken', 'MongoDB', 'Mocha', 'Webpack' ]
     },
     {
       title: "Alexa Skills",
       image: alexa,
-      link: "https://github.com/CharlotteMD/alexa-skills"
+      link: "https://github.com/CharlotteMD/alexa-skills",
+      tech: ['Alexa SDK', 'node.JS' ]
     },
     {
-      title: "AWS Amplify",
+      title: "To Do list",
       image: amplify,
-      link: "https://github.com/CharlotteMD/Ultimate-To-Do-App"
+      link: "https://github.com/CharlotteMD/Ultimate-To-Do-App",
+      tech: ['AWS Amplify', 'React', 'Styled Components', 'eslint' ]
     },
     {
       title: "Three.js",
       image: threejs,
-      link: "https://github.com/CharlotteMD/3js"
+      link: "https://github.com/CharlotteMD/3js",
+      tech: ['threeJS', 'JavaScript']
     },
     {
       title: "Holiday Packing App (WIP)",
       image: sun,
-      link: "https://github.com/CharlotteMD/packing-list-app"
+      link: "https://github.com/CharlotteMD/packing-list-app",
+      tech: ['AWS Amplify', 'React', 'Styled Components', 'Axios', 'Babel', 'Storybook', 'eslint', 'firebase' ]
     },
     {
       title: "Advent Calendar",
       image: advent,
-      link: "https://github.com/CharlotteMD/advent-calendar"
+      link: "https://github.com/CharlotteMD/advent-calendar",
+      tech: ['React']
+    },
+    {
+      title: "Beach Time App",
+      image: beach,
+      link: "https://github.com/CharlotteMD/beach-app",
+      tech: ['Babel', 'eslint', 'firebase', 'prettier', 'webpack', 'React']
     },
     {
       title: "My original professional portfolio",
       image: portfolio,
-      link: "https://github.com/CharlotteMD/"
+      link: "https://github.com/CharlotteMD/CharlotteMD.github.io",
+      tech: ['HTML', 'CSS', 'JavaScript']
     }
   ];
 
