@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { MyBlogs } from "./shared/blocks.js";
+
+import portfolio from "../images/portfolio.jpg";
 
 
 import "../css/style.css";
@@ -9,6 +11,7 @@ const myBlogs = [
     {
       title: "Where to start with coding",
       publication: 'Code Like a Girl',
+      image: portfolio,
       link: "https://code.likeagirl.io/where-to-start-with-coding-a10ebdd0ed56",
       tags: 'learning'
     },
@@ -162,16 +165,81 @@ const myBlogs = [
 ];
 
 function Blogs() {
+
+  const [blogTags, setBlogTags] = useState('all');
+
+  function filterAll() {
+    setBlogTags('all');
+  }
+
+  function filterDiversity() {
+    setBlogTags('diversity');
+  }
+
+  function filterLearning() {
+    setBlogTags('learning');
+  }
+
+  function filterWork() {
+    setBlogTags('work');
+  }
+
+  function filterTech() {
+    setBlogTags('tech');
+  }
+
   return (
     <div className="Blogs">
       <h2 className="pageTitle">Blogs</h2>
+
+      <button onClick={filterAll}>All</button>
+      <button onClick={filterDiversity}>Diversity</button>
+      <button onClick={filterLearning}>Learning</button>
+      <button onClick={filterWork}>Work</button>
+      <button onClick={filterTech}>Tech</button>
+
       <div className="careerJourney">
         <h3 className="subtitle">Blogs written by me</h3>
-        <ul className="blockContainer">
+        { blogTags === 'all' && (
+          <ul className="blockContainer">
             {myBlogs.map(myBlogs => (
-                <MyBlogs blog={myBlogs} />
+              <MyBlogs blog={myBlogs} />
             ))}
+          </ul>
+        )}
+
+        { blogTags === 'diversity' && (
+          <ul className="blockContainer">
+            {myBlogs.filter(myBlogs => myBlogs.tags == 'diversity').map(filteredBlog => (
+                <MyBlogs blog={filteredBlog} />
+              ))}
         </ul>
+        )}
+
+        { blogTags === 'learning' && (
+          <ul className="blockContainer">
+            {myBlogs.filter(myBlogs => myBlogs.tags == 'learning').map(filteredBlog => (
+                <MyBlogs blog={filteredBlog} />
+              ))}
+        </ul>
+        )}
+
+        { blogTags === 'work' && (
+          <ul className="blockContainer">
+            {myBlogs.filter(myBlogs => myBlogs.tags == 'work').map(filteredBlog => (
+                <MyBlogs blog={filteredBlog} />
+              ))}
+        </ul>
+        )}
+
+        { blogTags === 'tech' && (
+          <ul className="blockContainer">
+            {myBlogs.filter(myBlogs => myBlogs.tags == 'tech').map(filteredBlog => (
+                <MyBlogs blog={filteredBlog} />
+              ))}
+        </ul>
+        )}
+
         <h3 className="subtitle">Blogs written by others</h3>
         <ul className="blockContainer">
             {otherBlogs.map(otherBlogs => (
