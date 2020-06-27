@@ -15,6 +15,22 @@
   justify-content: center;
 }
 
+.blockItem + .learning {
+  border: solid orange 2px;
+}
+
+.blockItem + .work {
+  border: solid darkviolet 2px;
+}
+
+.blockItem + .diversity {
+  border: solid springgreen 2px;
+}
+
+.blockItem + .tech {
+  border: solid deepskyblue 2px;
+}
+
 .blockItem p span {
   font-weight: bold;
 }

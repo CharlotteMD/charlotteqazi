@@ -40,7 +40,7 @@ export const MyProjects = ({ project }) => (
 );
 
 export const MyBlogs = ({ blog }) => (
-  <li className="blockItem">
+  <li className={`blockItem ${blog.tags}`}>
     <a href={blog.link} alt={blog.title} target="_blank">
       <h3>{blog.title}</h3>
       {blog.publication && (
