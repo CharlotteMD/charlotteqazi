@@ -6,6 +6,7 @@ import Intro from "./intro";
 import Career from "./career";
 import Projects from "./projects";
 import Skills from "./skills";
+import Tech from "./tech";
 import Blogs from "./blogs";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/career" component={Career} />
           <Route path="/projects" component={Projects} />
           <Route path="/skills" component={Skills} />
+          <Route path="/tech" component={Tech} />
           <Route path="/blogs" component={Blogs} />
           <Route exact path="/" component={Intro} />
         </Router>
