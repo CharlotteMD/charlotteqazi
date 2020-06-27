@@ -43,9 +43,7 @@ export const MyBlogs = ({ blog }) => (
   <li className={`blockItem ${blog.tags}`}>
     <a href={blog.link} alt={blog.title} target="_blank">
       <h3>{blog.title}</h3>
-      {blog.publication && (
-        <p>Published in: {blog.publication}</p>
-      )}
+      <p>Published in: {blog.publication}</p>
     </a>
   </li>
 );

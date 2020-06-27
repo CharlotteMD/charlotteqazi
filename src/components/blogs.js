@@ -50,6 +50,7 @@ const myBlogs = [
     },
     {
       title: "A solution to copy to clipboard",
+      publication: 'My Medium blog',
       link: "https://medium.com/@charlotte.davies/a-solution-to-copy-to-clipboard-2b499e1659cf",
       tags: 'tech'
     },
@@ -67,6 +68,7 @@ const myBlogs = [
     },
     {
       title: "Where to start with Alexa Skills development series (6 blogs)",
+      publication: 'My Medium blog',
       link: "https://code.likeagirl.io/where-to-start-with-alexa-skills-development-part-1-alexa-developer-console-654687788948",
       tags: 'tech'
     },
