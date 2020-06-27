@@ -94,17 +94,20 @@ function Projects() {
     {
       title: "Beema",
       image: beema,
-      link: "https://www.beema.ae/"
+      link: "https://www.beema.ae/",
+      tech: ['React', 'Storybook', 'Cuttlebelle', 'JavaScript']
     },
     {
       title: "Axora",
       image: axora,
-      link: "https://www.axora.com/"
+      link: "https://www.axora.com/",
+      tech: ['React', 'TypeScript', 'Styled Components']
     },
     {
       title: "Jaimy",
       image: jaimy,
-      link: "https://jaimy.be/en/"
+      link: "https://jaimy.be/en/",
+      tech: ['React', 'JavaScript', 'CSS']
     }
   ];
 
