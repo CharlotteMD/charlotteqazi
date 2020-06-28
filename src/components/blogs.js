@@ -184,6 +184,7 @@ function Blogs() {
 
       <div className="careerJourney">
         <h3 className="subtitle">Blogs written by me</h3>
+        
         { blogTags === 'all' && (
           <ul className="blockContainer">
             {myBlogs.map(myBlogs => (
@@ -192,37 +193,11 @@ function Blogs() {
           </ul>
         )}
 
-        { blogTags === 'diversity' && (
-          <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags === 'diversity').map(filteredBlog => (
-                <MyBlogs blog={filteredBlog} />
-              ))}
+        <ul className="blockContainer">
+          {myBlogs.filter(myBlogs => myBlogs.tags === blogTags).map(filteredBlog => (
+              <MyBlogs blog={filteredBlog} />
+            ))}
         </ul>
-        )}
-
-        { blogTags === 'learning' && (
-          <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags === 'learning').map(filteredBlog => (
-                <MyBlogs blog={filteredBlog} />
-              ))}
-        </ul>
-        )}
-
-        { blogTags === 'work' && (
-          <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags === 'work').map(filteredBlog => (
-                <MyBlogs blog={filteredBlog} />
-              ))}
-        </ul>
-        )}
-
-        { blogTags === 'tech' && (
-          <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags === 'tech').map(filteredBlog => (
-                <MyBlogs blog={filteredBlog} />
-              ))}
-        </ul>
-        )}
 
         <h3 className="subtitle">Blogs written by others</h3>
         <ul className="blockContainer">
