@@ -140,6 +140,18 @@ function Projects() {
       image: jaimy,
       link: "https://jaimy.be/en/",
       tech: ['React', 'JavaScript', 'CSS']
+    },
+    {
+      title: "BCG DV London Engineering Recruitment Microsite",
+      image: jaimy,
+      link: "https://jaimy.be/en/",
+      tech: ['React', 'JavaScript', 'CSS', 'Styled Components', 'Gatsby', 'Netlify']
+    },
+    {
+      title: "BCG Global Email Signature Generator",
+      image: jaimy,
+      link: "https://jaimy.be/en/",
+      tech: ['React', 'JavaScript', 'CSS']
     }
   ];
 
