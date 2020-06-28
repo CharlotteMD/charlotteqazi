@@ -185,10 +185,6 @@ function Blogs() {
         </button>
       ))}
 
-
-        
-
-
       <div className="careerJourney">
 
       {blogTags !== 'Interviews' && (
@@ -208,11 +204,20 @@ function Blogs() {
               <MyBlogs blog={filteredBlog} />
             ))}
         </ul>
-
+                 
         <h3 className="subtitle">Blogs written by others</h3>
+
+        { blogTags === 'All' && (
+          <ul className="blockContainer">
+              {otherBlogs.map(otherBlogs => (
+                  <MyBlogs blog={otherBlogs} />
+              ))}
+          </ul>
+        )}
+
         <ul className="blockContainer">
-            {otherBlogs.map(otherBlogs => (
-                <MyBlogs blog={otherBlogs} />
+          {otherBlogs.filter(otherBlogs => otherBlogs.tags === blogTags).map(filteredBlog => (
+              <MyBlogs blog={filteredBlog} />
             ))}
         </ul>
       </div>
