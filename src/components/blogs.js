@@ -178,8 +178,12 @@ function Blogs() {
     <div className="Blogs">
       <h2 className="pageTitle">Blogs</h2>
 
+      <button onClick={() => filterBlogs('all')}>All</button>
+
       {blogThemes.map(blogThemes => (
-        <button onClick={() => filterBlogs(`${blogThemes}`)}>{blogThemes}</button>
+        <button onClick={() => filterBlogs(`${blogThemes}`)}>
+          {blogThemes}
+        </button>
       ))}
 
       <div className="careerJourney">
