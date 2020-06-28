@@ -163,9 +163,17 @@ function Projects() {
 
         <h3 className="subtitle">Professional Projects</h3>
 
+        { techTags === 'all' && (
+          <ul className="blockContainer">
+            {professionalProjects.map(projects => (
+              <MyProjects project={projects} />
+            ))}
+          </ul>
+        )}
+
         <ul className="blockContainer">
-          {professionalProjects.map(projects => (
-            <MyProjects project={projects} />
+          {professionalProjects.filter(professionalProjects => professionalProjects.tech.includes(`${techTags}`)).map(filteredTech => (
+            <MyProjects project={filteredTech} />
           ))}
         </ul>
 
