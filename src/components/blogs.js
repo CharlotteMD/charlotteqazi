@@ -164,39 +164,23 @@ const myBlogs = [
 
 ];
 
+const blogThemes = ['all', 'diversity', 'learning', 'tech', 'work'];
+
 function Blogs() {
 
   const [blogTags, setBlogTags] = useState('all');
 
-  function filterAll() {
-    setBlogTags('all');
-  }
-
-  function filterDiversity() {
-    setBlogTags('diversity');
-  }
-
-  function filterLearning() {
-    setBlogTags('learning');
-  }
-
-  function filterWork() {
-    setBlogTags('work');
-  }
-
-  function filterTech() {
-    setBlogTags('tech');
+  function filterBlogs(filterType) {
+    setBlogTags(filterType);
   }
 
   return (
     <div className="Blogs">
       <h2 className="pageTitle">Blogs</h2>
 
-      <button onClick={filterAll}>All</button>
-      <button onClick={filterDiversity}>Diversity</button>
-      <button onClick={filterLearning}>Learning</button>
-      <button onClick={filterWork}>Work</button>
-      <button onClick={filterTech}>Tech</button>
+      {blogThemes.map(blogThemes => (
+        <button onClick={() => filterBlogs(`${blogThemes}`)}>{blogThemes}</button>
+      ))}
 
       <div className="careerJourney">
         <h3 className="subtitle">Blogs written by me</h3>
@@ -210,7 +194,7 @@ function Blogs() {
 
         { blogTags === 'diversity' && (
           <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags == 'diversity').map(filteredBlog => (
+            {myBlogs.filter(myBlogs => myBlogs.tags === 'diversity').map(filteredBlog => (
                 <MyBlogs blog={filteredBlog} />
               ))}
         </ul>
@@ -218,7 +202,7 @@ function Blogs() {
 
         { blogTags === 'learning' && (
           <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags == 'learning').map(filteredBlog => (
+            {myBlogs.filter(myBlogs => myBlogs.tags === 'learning').map(filteredBlog => (
                 <MyBlogs blog={filteredBlog} />
               ))}
         </ul>
@@ -226,7 +210,7 @@ function Blogs() {
 
         { blogTags === 'work' && (
           <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags == 'work').map(filteredBlog => (
+            {myBlogs.filter(myBlogs => myBlogs.tags === 'work').map(filteredBlog => (
                 <MyBlogs blog={filteredBlog} />
               ))}
         </ul>
@@ -234,7 +218,7 @@ function Blogs() {
 
         { blogTags === 'tech' && (
           <ul className="blockContainer">
-            {myBlogs.filter(myBlogs => myBlogs.tags == 'tech').map(filteredBlog => (
+            {myBlogs.filter(myBlogs => myBlogs.tags === 'tech').map(filteredBlog => (
                 <MyBlogs blog={filteredBlog} />
               ))}
         </ul>
