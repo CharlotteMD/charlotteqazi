@@ -180,7 +180,7 @@ function Blogs() {
       <h2 className="pageTitle">Blogs</h2>
 
       {blogThemes.map(blogThemes => (
-        <button onClick={() => filterBlogs(`${blogThemes}`)}>
+        <button className='filterButton'  onClick={() => filterBlogs(`${blogThemes}`)}>
           {blogThemes}
         </button>
       ))}

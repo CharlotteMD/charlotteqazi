@@ -86,6 +86,17 @@ li {
   margin: 10px;
 }
 
+.filterButton {
+  padding: 5px 10px;
+  margin: 10px;
+  border: dotted 5px var(--white);
+  background-color: var(--raspberry);
+  color: var(--white);
+  font-family: var(--raleway);
+  font-weight: bold;
+  font-size: 14px;
+}
+
 /* tablet */
 @media (min-width: 500px) {
   * {

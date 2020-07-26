@@ -137,10 +137,10 @@ function Projects() {
     <div className="Projects">
       <h2 className="pageTitle">Projects</h2>
 
-      <button onClick={() => filterSkills('all')}>All</button>
+      <button className='filterButton' onClick={() => filterSkills('all')}>All</button>
       
       {techSkills.map(techSkills => (
-        <button onClick={() => filterSkills(`${techSkills}`)}>
+        <button className='filterButton' onClick={() => filterSkills(`${techSkills}`)}>
           {techSkills}
         </button>
       ))}
