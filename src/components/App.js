@@ -6,6 +6,7 @@ import Intro from "./intro";
 import Career from "./career";
 import Projects from "./projects";
 import Blogs from "./blogs";
+import Courier from "./courier";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "../css/style.css";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/career" component={Career} />
           <Route path="/projects" component={Projects} />
           <Route path="/blogs" component={Blogs} />
+          <Route path="/courier" component={Courier} />
           <Route exact path="/" component={Intro} />
         </Router>
       </div>

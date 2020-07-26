@@ -129,7 +129,7 @@ const myBlogs = [
     {
       title: "Charlotte Davies, Associate Engineer at BCG Digital Ventures",
       publication: 'Courier Magazine (print)',
-      link: "https://lh3.googleusercontent.com/uUf3P2ado0kxgRVkOjoJGy8AxtFE-2WfNp8LTHB6CFtUWOtozo9yX6PLxcVAsgIBLgvq5T704LV89jlm8wJkwCvxp7VYtiXHRxaPzvUo",
+      link: "/courier",
       tags: 'Interviews'
     },
     {
