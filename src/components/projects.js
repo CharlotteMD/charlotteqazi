@@ -16,6 +16,10 @@ import advent from "../images/advent.png";
 import jaimy from "../images/jaimy.png";
 import axora from "../images/axora.png";
 import beema from "../images/beema.png";
+import signature from "../images/signature.png";
+import recruitment from "../images/recruitment.png";
+import charlottemd from "../images/charlottemd.png";
+import camera from "../images/camera.png";
 
 import "../css/style.css";
 
@@ -86,6 +90,18 @@ const projects = [
     image: portfolio,
     link: "https://github.com/CharlotteMD/CharlotteMD.github.io",
     tech: ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    title: "CharlotteMDavies.co.uk",
+    image: charlottemd,
+    link: "https://www.charlottemdavies.co.uk",
+    tech: ['HTML', 'CSS', 'JavaScript', 'React']
+  },
+  {
+    title: "Wedding Photographs app",
+    image: camera,
+    link: "https://github.com/CharlotteMD/jav-char-2.0",
+    tech: ['HTML', 'CSS', 'JavaScript', 'React', 'AWS Amplify']
   }
 ];
 
@@ -110,14 +126,14 @@ const professionalProjects = [
   },
   {
     title: "BCG DV London Engineering Recruitment Microsite",
-    image: jaimy,
-    link: "https://jaimy.be/en/",
+    image: recruitment,
+    link: "https://workingatbcgdv.london/engineering/",
     tech: ['React', 'JavaScript', 'CSS', 'Styled Components', 'Gatsby', 'Netlify']
   },
   {
-    title: "BCG Global Email Signature Generator",
-    image: jaimy,
-    link: "https://jaimy.be/en/",
+    title: "BCG Global Email Signature Generator - currently unavailable externally, (click to view prototype)",
+    image: signature,
+    link: "https://email-signature-creator.firebaseapp.com/",
     tech: ['React', 'JavaScript', 'CSS']
   }
 ];
