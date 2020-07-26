@@ -49,26 +49,6 @@ export const MyBlogs = ({ blog }) => (
   </li>
 );
 
-export const TechSkills = ({ info, devicon, image }) => (
-  <div className="blockItem">
-    <p className="skillsInfo">{info}</p>
-    <ul>
-      <li className="devicons">
-        {devicon.map(devicon => (
-          <i class={devicon} />
-        ))}
-        {image && (
-          <div className="devicons">
-            {image.map(image => (
-              <img src={image.src} alt={image.title} className={image.class} />
-            ))}
-          </div>
-        )}
-      </li>
-    </ul>
-  </div>
-);
-
 export const NavMenu = ({ item }) => (
   <li>
     <a href={item.link} alt={item.title}>

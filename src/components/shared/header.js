@@ -6,7 +6,6 @@ import "../../css/header.css";
 function Header() {
   const items = [
     { title: "CV", link: "/career" },
-    { title: "Tech Skills", link: "/skills" },
     { title: "Projects", link: "/projects" },
     { title: "Blogs", link: "/blogs" },
     { title: "About Me", link: "/" }
