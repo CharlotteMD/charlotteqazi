@@ -19,9 +19,22 @@ jobs:
       - run:
           name: Build React app
           command: npm run build
+    deploy:
+      docker:
+        - image: circleci/node:lts
+      steps:
+        - checkout # step in ci that gets code from GitHub
+        - run:
+            name: Deploy
+            command: 'echo "I will add deployment later!"'
 workflows:
   version: 2
   build_and_test:
     jobs:
       - test
       - build
+      - hold: # <<< A job that will require manual approval in the CircleCI web application.
+        type: approval # <<< This key-value pair will set your workflow to a status of "On Hold"
+      - deploy:
+        requires:
+          - hold
