@@ -1,5 +1,9 @@
 import React from "react";
 
+import Elevator from 'elevator.js';
+import elevatorAudio from '../audio/elevator.mp3';
+import bellAudio from '../audio/bell.mp3';
+
 import Header from "./shared/header.js";
 import Footer from "./shared/footer.js";
 import Intro from "./intro";
@@ -12,6 +16,15 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "../css/style.css";
 
 function App() {
+
+
+    var elevator = new Elevator({
+      element: document.querySelector('.elevator-button'),
+      mainAudio: elevatorAudio,
+      endAudio: bellAudio
+    });
+
+
   return (
     <div className="App">
       <Header />
@@ -24,6 +37,7 @@ function App() {
           <Route exact path="/" component={Intro} />
         </Router>
       </div>
+      <button class="elevator-button" onClick={()=>elevator.elevate()}>Back to Top</button>
       <Footer />
     </div>
   );
