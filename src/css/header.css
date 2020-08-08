@@ -69,7 +69,7 @@ footer {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: white;
+  background: var(--accessible-white);
   border-radius: 4px;
   opacity: 1;
   left: 0;
@@ -141,7 +141,7 @@ footer {
 }
 
 .nav-menu li a {
-  color: var(--white);
+  color: var(--accessible-white);
   width: 100%;
 }
 
@@ -169,6 +169,7 @@ footer {
 
   .nav-menu li a {
     color: var(--raspberry);
+    font-size: 20px;
   }
 
   .nav-menu li a:hover,
