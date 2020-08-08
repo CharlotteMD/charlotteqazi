@@ -127,6 +127,7 @@ footer {
 
 .nav-menu.isopen {
   display: block;
+  z-index: 10;
 }
 
 .nav-menu li {
