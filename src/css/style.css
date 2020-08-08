@@ -89,9 +89,9 @@ li {
 .filterButton {
   padding: 5px 10px;
   margin: 10px;
-  border: dotted 5px var(--white);
-  background-color: var(--raspberry);
-  color: var(--white);
+  border: none;
+  background-color: var(--white);
+  color: var(--raspberry);
   font-family: var(--raleway);
   font-weight: bold;
   font-size: 14px;

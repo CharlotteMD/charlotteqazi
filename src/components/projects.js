@@ -143,23 +143,36 @@ const techSkills = ['HTML', 'CSS', 'JavaScript', 'Express', 'MongoDB',  'Mocha',
 function Projects() {
 
   const [techTags, setTechTags] = useState('all');
+  // const dropdown = document.querySelector(".dropdown-content");
 
   function filterSkills(filterType) {
     setTechTags(filterType);
-    console.log(techTags)
+    const dropdown = document.querySelector(".dropdown-content");
+    dropdown.classList.toggle("isopen");
+  }
+
+  function handleDropdown() {
+    const dropdown = document.querySelector(".dropdown-content");
+    dropdown.classList.toggle("isopen");
   }
 
   return (
     <div className="Projects">
       <h2 className="pageTitle">Projects</h2>
 
-      <button className='filterButton' onClick={() => filterSkills('all')}>All</button>
-      
-      {techSkills.map(techSkills => (
-        <button className='filterButton' onClick={() => filterSkills(`${techSkills}`)}>
-          {techSkills}
-        </button>
-      ))}
+      <div class="dropdown">
+        <button class="dropbtn" onClick={()=>handleDropdown()}>Skills</button>
+        <div class="dropdown-content">
+          <button className='filterButton' onClick={() => filterSkills('all')}>
+            All
+          </button>
+          {techSkills.map(techSkills => (
+            <button className='filterButton' onClick={() => filterSkills(`${techSkills}`)}>
+              {techSkills}
+            </button>
+          ))}
+        </div>
+      </div>
 
       <h3 className="subtitle">Side Projects</h3>
 
