@@ -5,7 +5,7 @@ html {
   --max-mobile-width: 450px;
   --max-tablet-width: 950px;
   --max-desktop-width: 1500px;
-  --raspberry: #df4e9f;
+  --raspberry: #D7288B;
   --candy: #ffbed5;
   --white: #fff3f7;
   --grey: #6b717e;
@@ -95,6 +95,11 @@ li {
   font-family: var(--raleway);
   font-weight: bold;
   font-size: 14px;
+}
+
+.filterButton:hover {
+  color: var(--white);
+  background-color: var(--raspberry);
 }
 
 /* tablet */
