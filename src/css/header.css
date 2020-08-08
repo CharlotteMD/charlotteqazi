@@ -141,6 +141,7 @@ footer {
 
 .nav-menu li a {
   color: var(--white);
+  width: 100%;
 }
 
 .nav-menu li a:hover,

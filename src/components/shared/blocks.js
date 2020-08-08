@@ -51,7 +51,7 @@ export const MyBlogs = ({ blog }) => (
 
 export const NavMenu = ({ item }) => (
   <li>
-    <a href={item.link} alt={item.title}>
+    <a href={item.link}>
       {item.title}
     </a>
   </li>

@@ -21,12 +21,12 @@ function Header() {
   return (
     <header className="navbar">
       <div className="navTitle">
-        <a href="/" alt="Charlotte Davies - Software Engineer">
+        <a href="/" aria-label="Charlotte Davies - Software Engineer">
           <h1>Charlotte Davies</h1>
           <h2>Software Engineer</h2>
         </a>
       </div>
-      <button className="burger-nav" id="burger" onClick={handleBurger}>
+      <button className="burger-nav" id="burger" aria-label="mobile navigation" onClick={handleBurger}>
         <span />
         <span />
         <span />
