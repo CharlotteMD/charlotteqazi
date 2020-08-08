@@ -173,17 +173,29 @@ function Blogs() {
 
   function filterBlogs(filterType) {
     setBlogTags(filterType);
+    const dropdown = document.querySelector(".dropdown-content");
+    dropdown.classList.toggle("isopen");
+  }
+
+  function handleDropdown() {
+    const dropdown = document.querySelector(".dropdown-content");
+    dropdown.classList.toggle("isopen");
   }
 
   return (
     <div className="Blogs">
       <h2 className="pageTitle">Blogs</h2>
 
-      {blogThemes.map(blogThemes => (
-        <button className='filterButton'  onClick={() => filterBlogs(`${blogThemes}`)}>
-          {blogThemes}
-        </button>
-      ))}
+      <div class="dropdown">
+        <button class="dropbtn" onClick={()=>handleDropdown()}>Filter by topic</button>
+        <div class="dropdown-content">
+          {blogThemes.map(blogThemes => (
+            <button className='filterButton' onClick={() => filterBlogs(`${blogThemes}`)}>
+              {blogThemes}
+            </button>
+          ))}
+        </div>
+      </div>
 
       <div className="careerJourney">
 

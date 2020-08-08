@@ -143,7 +143,6 @@ const techSkills = ['HTML', 'CSS', 'JavaScript', 'Express', 'MongoDB',  'Mocha',
 function Projects() {
 
   const [techTags, setTechTags] = useState('all');
-  // const dropdown = document.querySelector(".dropdown-content");
 
   function filterSkills(filterType) {
     setTechTags(filterType);
@@ -161,7 +160,7 @@ function Projects() {
       <h2 className="pageTitle">Projects</h2>
 
       <div class="dropdown">
-        <button class="dropbtn" onClick={()=>handleDropdown()}>Skills</button>
+        <button class="dropbtn" onClick={()=>handleDropdown()}>Filter by skill</button>
         <div class="dropdown-content">
           <button className='filterButton' onClick={() => filterSkills('all')}>
             All
