@@ -12,9 +12,9 @@ const items = [
       "I can build almost anything I can imagine - I love experimenting with all sorts: Alexa Skills Development in Node.js, Three.js, games written in vanilla JS",
     emoji2: "✨",
     two:
-      "You can make a static site sparkle! I love being able to wow users with JavaScript animations and features!",
+      "You can make a site sparkle! I love being able to wow users with JavaScript animations and features!",
     emoji3: "🖲",
-    three: "Click here to see some of my recent projects"
+    three: "Head to my projects section to see what I've built"
   },
   {
     love: "Things I love about coding",
