@@ -117,3 +117,20 @@ li {
     max-width: var(--max-desktop-width);
   }
 }
+
+.elevator-button {
+  float: right;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: var(--raspberry);
+  font-family: var(--raleway);
+  font-size: 15px;
+}
+
+.elevator-button img {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}

@@ -3,6 +3,7 @@ import React from "react";
 import Elevator from 'elevator.js';
 import elevatorAudio from '../audio/elevator.mp3';
 import bellAudio from '../audio/bell.mp3';
+import volumeIcon from '../images/volume.png';
 
 import Header from "./shared/header.js";
 import Footer from "./shared/footer.js";
@@ -37,7 +38,13 @@ function App() {
           <Route exact path="/" component={Intro} />
         </Router>
       </div>
-      <button class="elevator-button" onClick={()=>elevator.elevate()}>Back to Top</button>
+      <button 
+        class="elevator-button" 
+        aria-label='Back to Top' 
+        onClick={()=>elevator.elevate()}>
+          Back to top
+        <img src={volumeIcon} alt="sound on"/>
+      </button>
       <Footer />
     </div>
   );
