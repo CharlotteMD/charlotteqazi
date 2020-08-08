@@ -160,13 +160,13 @@ function Projects() {
       <h2 className="pageTitle">Projects</h2>
 
       <div class="dropdown">
-        <button class="dropbtn" onClick={()=>handleDropdown()}>Filter by skill</button>
+        <button class="dropbtn" aria-label="filter by skill" onClick={()=>handleDropdown()}>Filter by skill</button>
         <div class="dropdown-content">
-          <button className='filterButton' onClick={() => filterSkills('all')}>
+          <button className='filterButton' aria-label="show all skills" onClick={() => filterSkills('all')}>
             All
           </button>
           {techSkills.map(techSkills => (
-            <button className='filterButton' onClick={() => filterSkills(`${techSkills}`)}>
+            <button className='filterButton' aria-label={techSkills} onClick={() => filterSkills(`${techSkills}`)}>
               {techSkills}
             </button>
           ))}

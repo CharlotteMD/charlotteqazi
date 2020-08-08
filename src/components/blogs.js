@@ -187,10 +187,10 @@ function Blogs() {
       <h2 className="pageTitle">Blogs</h2>
 
       <div class="dropdown">
-        <button class="dropbtn" onClick={()=>handleDropdown()}>Filter by topic</button>
+        <button class="dropbtn" aria-label="filter by topic" onClick={()=>handleDropdown()}>Filter by topic</button>
         <div class="dropdown-content">
           {blogThemes.map(blogThemes => (
-            <button className='filterButton' onClick={() => filterBlogs(`${blogThemes}`)}>
+            <button className='filterButton' aria-label={blogThemes} onClick={() => filterBlogs(`${blogThemes}`)}>
               {blogThemes}
             </button>
           ))}
