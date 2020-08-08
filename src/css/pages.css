@@ -142,6 +142,10 @@
   background: var(--raspberry);
 }
 
+.Projects .blockItem:hover h3 {
+  color: var(--accessible-white);
+}
+
 /* tablet */
 @media (min-width: 450px) {
   .blockItem {

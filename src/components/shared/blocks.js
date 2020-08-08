@@ -24,9 +24,15 @@ export const Experience = ({ role }) => (
 export const OtherRoles = ({ project }) => (
   <li className="blockItem">
     <img src={project.image} alt={project.title} className={project.class} />
-    <a href={project.link} alt={project.title}>
+    {project.link && (
+      <a href={project.link} alt={project.title}>
+        <h3>{project.title}</h3>
+      </a>
+    )}
+    {!project.link && (
       <h3>{project.title}</h3>
-    </a>
+    )}
+
     <p>{project.info}</p>
   </li>
 );
