@@ -32,5 +32,5 @@ workflows:
           requires:
             - test
       - build
-        requires:
-            - hold
+          requires:
+              - hold
