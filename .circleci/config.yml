@@ -19,6 +19,11 @@ jobs:
       - run:
           name: Build React app
           command: npm run build
+  deploy:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout # step in ci that gets code from GitHub
       - run:
           name: Firebase Deploy
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
@@ -27,4 +32,12 @@ workflows:
   build_and_test:
     jobs:
       - test
-      - build 
+      - build
+      - hold:
+          type: approval
+          requires:
+            - test
+            - build
+      - deploy:
+          requires:
+            - hold
