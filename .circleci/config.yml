@@ -32,12 +32,11 @@ workflows:
   build_and_test:
     jobs:
       - test
-      - build
       - hold:
           type: approval
           requires:
             - test
-            - build
-      - deploy:
-          requires:
+      - build
+        requires:
             - hold
+      - deploy
