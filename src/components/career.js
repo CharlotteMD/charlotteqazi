@@ -16,7 +16,7 @@ function Career() {
       date: "June 2018 - present",
       info: "https://bcgdv.com/",
       skills:
-        "in addition to technical skills, working in a multi-disciplinary team, working to tight deadlines, experience working in the Middle East"
+        "in addition to technical skills, working in a multi-disciplinary team, stakeholder management, project management, pitching and presenting, working to tight deadlines, experience working in the Middle East and the USA"
     },
     {
       emoji: "👩🏻‍💻",
@@ -74,14 +74,14 @@ function Career() {
       class: "blogging",
       link: "https://medium.com/@charlotte.davies",
       info:
-        "When I first graduated General Assembly, many people asked me questions about changing my career. I wrote down those answers in my first post, which lead to more questions and more blogs."
+        "When I first graduated from General Assembly, many people asked me questions about changing my career. I wrote down those answers in my first post, which lead to more questions and more blogs."
     },
     {
-      title: "Diversity in Tech",
+      title: "Accessibility",
       image: diversity,
       class: "blogging",
       info:
-        "I am passionate about ensuring tech is a diverse and inclusive industry, not just in what we build but also in how we as techmakers feel. I am a founder member of both DV London Women and DV Culture Club which aims to celebrates people from all cultural backgrounds and champions openness at DV."
+        "I passionately believe that the internet should be accessible to everyone. I am working hard to learn more about how I can make what I build more accessible and have spoken on the topic recently at conferences."
     }
   ];
 
