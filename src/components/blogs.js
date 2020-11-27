@@ -161,7 +161,13 @@ const myBlogs = [
       publication: 'Planeta Chatbot',
       link: "https://planetachatbot.com/desarrollo-de-skills-de-alexa-developer-console-f5efedda02cf",
       tags: 'Tech'
-    }
+    },
+    {
+      title: "What Skills Have You Found Vital To Your Job?",
+      publication: 'Stemettes Zine',
+      link: "https://stemettes.org/zine/advice/what-skills-have-you-found-vital-to-your-job/",
+      tags: 'Work'
+    },
 
 ];
 

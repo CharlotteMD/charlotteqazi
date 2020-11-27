@@ -18,12 +18,12 @@ const items = [
   },
   {
     love: "Things I love about coding",
-    emoji1: "🖥",
-    one: "Seeing the screen transform before your eyes",
+    emoji1: "💥",
+    one: "As techmakers we have the skills and tools at our fingertips to build things that could make a real difference",
     emoji2: "🐛",
     two: "The euphoria of fixing a bug",
     emoji3: "🧠",
-    three: "The opportunity to learn something new every day"
+    three: "The opportunity to learn something new every day",
   },
   {
     love: "Things I love about my job",
