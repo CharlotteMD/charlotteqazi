@@ -23,6 +23,11 @@
   font-weight: bold;
 }
 
+.blockItem a {
+  width: 100%;
+  text-align: center;
+}
+
 .blockItem a h3:hover,
 .blockItem a h3:active {
   color: var(--grey);
