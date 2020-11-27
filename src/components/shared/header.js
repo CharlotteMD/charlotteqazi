@@ -21,8 +21,8 @@ function Header() {
   return (
     <header className="navbar">
       <div className="navTitle">
-        <a href="/" aria-label="Charlotte Davies - Software Engineer">
-          <h1>Charlotte Davies</h1>
+        <a href="/" aria-label="Charlotte Qazi - Software Engineer">
+          <h1>Charlotte Qazi</h1>
           <h2>Software Engineer</h2>
         </a>
       </div>
