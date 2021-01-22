@@ -54,7 +54,7 @@ const myBlogs = [
     {
       title: "A solution to copy to clipboard",
       publication: 'My Medium blog',
-      link: "https://medium.com/@charlotte.davies/a-solution-to-copy-to-clipboard-2b499e1659cf",
+      link: "https://charlotteqazi.medium.com/a-solution-to-copy-to-clipboard-2b499e1659cf",
       tags: 'Tech'
     },
     {

@@ -72,7 +72,7 @@ function Career() {
       title: "Blogging",
       image: medium,
       class: "blogging",
-      link: "https://medium.com/@charlotte.davies",
+      link: "https://charlotteqazi.medium.com/",
       info:
         "When I first graduated from General Assembly, many people asked me questions about changing my career. I wrote down those answers in my first post, which lead to more questions and more blogs."
     },

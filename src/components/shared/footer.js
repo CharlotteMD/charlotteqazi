@@ -17,7 +17,7 @@ function Footer() {
     },
     {
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/charlottemdavies/",
+      link: "https://www.linkedin.com/in/charlotteqazi/",
       image: linkedin
     },
     {
@@ -27,7 +27,7 @@ function Footer() {
     },
     {
       title: "Medium",
-      link: "https://medium.com/@charlotte.davies",
+      link: "https://charlotteqazi.medium.com/",
       image: medium
     }
   ];
