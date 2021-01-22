@@ -9,9 +9,14 @@ import "../css/style.css";
 
 const myBlogs = [
     {
+      title: "DO NOT push to production without checking these things",
+      publication: 'My Medium Blog',
+      link: "https://charlotteqazi.medium.com/do-not-push-to-production-without-checking-these-things-7f1d1ef845be",
+      tags: 'Tech'
+    },
+    {
       title: "Where to start with coding",
       publication: 'Code Like a Girl',
-      image: portfolio,
       link: "https://code.likeagirl.io/where-to-start-with-coding-a10ebdd0ed56",
       tags: 'Learning'
     },
