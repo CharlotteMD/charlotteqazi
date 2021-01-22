@@ -20,6 +20,7 @@ import signature from "../images/signature.png";
 import recruitment from "../images/recruitment.png";
 import charlottemd from "../images/charlottemd.png";
 import camera from "../images/camera.png";
+import recipes from "../images/recipes.png";
 
 import "../css/style.css";
 
@@ -102,6 +103,12 @@ const projects = [
     image: camera,
     link: "https://github.com/CharlotteMD/jav-char-2.0",
     tech: ['HTML', 'CSS', 'JavaScript', 'React', 'AWS Amplify']
+  },
+  {
+    title: "Recipes in My Fridge - WIP",
+    image: recipes,
+    link: "https://github.com/CharlotteMD/fridge-app",
+    tech: ['HTML', 'CSS', 'JavaScript', 'React', 'firebase']
   }
 ];
 
