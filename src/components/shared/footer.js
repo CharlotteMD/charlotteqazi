@@ -12,7 +12,7 @@ function Footer() {
   const items = [
     {
       title: "Email",
-      link: "mailto:charlotteqazi@gmail.com",
+      link: "mailto:charlotte.qazi@gmail.com",
       image: email
     },
     {
