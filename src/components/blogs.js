@@ -153,6 +153,12 @@ const myBlogs = [
 
   const otherBlogs = [
     {
+      title: "She's building a robot: Charlotte Davies",
+      publication: 'Interviews with Women in STEM',
+      link: "https://medium.com/shes-building-a-robot/charlotte-davies-3132ca011747",
+      tags: 'Interviews'
+    },
+    {
       title: "Charlotte Davies, Associate Engineer at BCG Digital Ventures",
       publication: 'Courier Magazine (print)',
       link: "/courier",
