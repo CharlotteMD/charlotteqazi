@@ -8,6 +8,7 @@ function Header() {
     { title: "CV", link: "/career" },
     { title: "Projects", link: "/projects" },
     { title: "Blogs", link: "/blogs" },
+    { title: "Speaking", link: "/speaking" },
     { title: "About Me", link: "/" }
   ];
 
