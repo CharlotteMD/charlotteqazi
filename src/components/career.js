@@ -16,7 +16,7 @@ function Career() {
       date: "June 2018 - present",
       info: "https://bcgdv.com/",
       skills:
-        "in addition to technical skills, working in a multi-disciplinary team, stakeholder management, project management, pitching and presenting, working to tight deadlines, experience working in the Middle East and the USA"
+        "in addition to technical skills, working in a multi-disciplinary team, stakeholder management, project management, pitching and presenting, working to tight deadlines, experience working in APAC, the Middle East and the USA"
     },
     {
       emoji: "👩🏻‍💻",
