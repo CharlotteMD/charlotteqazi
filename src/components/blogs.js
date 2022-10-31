@@ -2,12 +2,33 @@ import React, {useState} from "react";
 
 import { MyBlogs } from "./shared/blocks.js";
 
-import portfolio from "../images/portfolio.jpg";
-
-
 import "../css/style.css";
 
 const myBlogs = [
+    {
+      title: "Low-Code/No-Code: All hands on deck",
+      publication: 'BCG DV Medium Blog',
+      link: "https://medium.com/bcg-digital-ventures/low-code-no-code-all-hands-on-deck-f56c46f9e621",
+      tags: 'Tech'
+    },
+    {
+      title: "3 takeaways from Google’s Women Developer Academy",
+      publication: 'My Medium Blog',
+      link: "https://charlotteqazi.medium.com/3-takeaways-from-googles-women-developer-academy-5dbc8b64682e",
+      tags: 'Learning'
+    },
+    {
+      title: "The impact of learning to code on mental health",
+      publication: 'My Medium Blog',
+      link: "https://charlotteqazi.medium.com/the-impact-of-learning-to-code-on-mental-health-102e34047669",
+      tags: 'Learning'
+    },
+    {
+      title: "Why accessibility is important",
+      publication: 'My Medium Blog',
+      link: "https://charlotteqazi.medium.com/why-accessibility-is-important-5ffe17d39921",
+      tags: 'Tech'
+    },
     {
       title: "DO NOT push to production without checking these things",
       publication: 'My Medium Blog',
