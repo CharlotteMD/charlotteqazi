@@ -53,6 +53,11 @@ a:hover {
   font-weight: bold;
 }
 
+.grey-a {
+  color: var(--grey);
+  font-weight: bold;
+}
+
 p {
   font-family: "Playfair Display", serif;
 }

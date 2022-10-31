@@ -46,11 +46,11 @@ export const MyProjects = ({ project }) => (
   </li>
 );
 
-export const MyBlogs = ({ blog }) => (
+export const MyBlogs = ({ blog, speak }) => (
   <li className={`blockItem ${blog.tags}`}>
     <a href={blog.link} alt={blog.title} target="_blank">
       <h3>{blog.title}</h3>
-      <p>Published in: {blog.publication}</p>
+      <p>{speak ? `Conference: ${blog.publication}` : `Published in: ${blog.publication}`}</p>
     </a>
   </li>
 );
