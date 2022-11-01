@@ -164,7 +164,8 @@ footer {
   }
 
   .nav-menu li {
-    width: 25%;
+    padding: 5px;
+    margin: 5px;
   }
 
   .nav-menu li a {
@@ -190,7 +191,6 @@ footer {
 
 .contact {
   display: flex;
-  justify-content: center;
   padding: 20px 0;
 }
 
